@@ -11,3 +11,13 @@ This project consists of the following components.
   - Jade for templates
 - Bootstrap for look and feel (works well with Less)
 
+Uses
+----
+
+- Bootstrap a web application
+- Great for hackathons, just checkout the code and you're ready to go
+
+Roadmap
+-------
+
+- MongoDB support
