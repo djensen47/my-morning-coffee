@@ -21,3 +21,10 @@ Roadmap
 -------
 
 - MongoDB support
+
+Notes
+-----
+
+Generated the express app using the following command line:
+
+`express --sessions --ejs --css less my-morning-coffee`
