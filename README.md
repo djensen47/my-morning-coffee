@@ -17,6 +17,36 @@ Uses
 - Bootstrap a web application
 - Great for hackathons, just checkout the code and you're ready to go
 
+Starting
+--------
+To run the app simply run the following command:
+
+`$ node start`
+
+The `start.js` file will kick off the CoffeeScript app.
+
+Deployment
+----------
+
+Here are deployment instructions for various Platform as a Service environments.
+
+AppFog (Cloud Foundry based)
+============================
+
+First time:
+
+`
+$ gem install af
+$ af login
+$ af push
+`
+
+Subsequent updates:
+`
+$ af update <ap-name>
+`
+
+
 Roadmap
 -------
 
