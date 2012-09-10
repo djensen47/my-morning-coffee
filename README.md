@@ -10,6 +10,7 @@ This project consists of the following components.
   - Less for CSS
   - Jade for templates
 - Bootstrap for look and feel (works well with Less)
+- Bootswatch for Boostrap themes
 
 Uses
 ----
@@ -21,7 +22,7 @@ Starting
 --------
 To run the app simply run the following command:
 
-`$ node start`
+    $ node start
 
 The `start.js` file will kick off the CoffeeScript app.
 
@@ -35,21 +36,20 @@ AppFog (Cloud Foundry based)
 
 First time:
 
-`
-$ gem install af
-$ af login
-$ af push
-`
+    $ gem install af
+    $ af login
+    $ af push
 
 Subsequent updates:
-`
-$ af update <ap-name>
-`
+
+    $ af update <ap-name>
 
 
 Roadmap
 -------
 
+- Twitter authentication
+- Facebook authentication
 - MongoDB support
 
 Notes
@@ -57,4 +57,4 @@ Notes
 
 Generated the express app using the following command line:
 
-`express --sessions --css less my-morning-coffee`
+    express --sessions --css less my-morning-coffee
