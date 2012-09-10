@@ -2,6 +2,31 @@ doctype 5
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    //- link(rel='stylesheet', href='/stylesheets/bootstrap/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/bootswatch/slate.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap/responsive.css')
+    script(src='/javascripts/bootstrap.min.js')  
+
   body
-    block content
+    .navbar.navbar-fixed-top.active
+      .navbar-inner
+        .container
+          a(class="brand", href="#")
+            | My Morning Coffee
+        
+          .pull-right
+            a.btn.btn-success Sign Up
+            a.btn.btn-primary Login
+
+    .container
+      .hero-unit
+        h1 My Morning Coffee
+        p(style="padding-top: 1em;")
+          a.btn.btn-primary.btn-large
+            i.icon-glass.icon-white 
+            | &nbsp;Learn more
+      .row
+        .span8
+          block content
+        .span4
+          .well This is the side bar.    
