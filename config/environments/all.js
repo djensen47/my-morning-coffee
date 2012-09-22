@@ -1,6 +1,8 @@
 var express = require('express')
   , poweredBy = require('connect-powered-by')
-  , util = require('util');
+  , util = require('util')
+  , passport = require('passport')
+  , mongoose = require('mongoose');
 
 module.exports = function() {
   // Warn of version mismatch between global "lcm" binary and local installation
@@ -41,5 +43,12 @@ module.exports = function() {
   this.use(require('less-middleware')({ src: __dirname + '/../../public' }))
   this.use(express.static(__dirname + '/../../public'));
   this.use(express.bodyParser());
+
+  // this.use(express.session());
+
+  // passport middleware config
+  this.use(passport.initialize());
+  this.use(passport.session());
+
   this.use(this.router);
 }

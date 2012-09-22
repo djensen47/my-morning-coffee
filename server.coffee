@@ -3,6 +3,8 @@ path = require('path')
 
 options = {"coffeeScript": true, "routesFile": path.resolve('.', './config/routes.coffee')}
 
+console.log('about to boot');
+
 locomotive.boot('.', 'development', options, (err, server) -> 
   throw err if (err)
 

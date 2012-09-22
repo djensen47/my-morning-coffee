@@ -6,4 +6,5 @@
 # Guide on [routing](http://locomotivejs.org/guide/routing.html) for additional
 # information.
 module.exports = () ->
-  this.root('pages#main');
+  this.root('pages#main')
+  this.match('logs', 'pages#logs')
