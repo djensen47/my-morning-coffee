@@ -31,8 +31,8 @@ Deployment
 
 Here are deployment instructions for various Platform as a Service environments.
 
-AppFog (Cloud Foundry based)
-============================
+### AppFog (Cloud Foundry based)
+
 
 First time:
 
@@ -58,3 +58,11 @@ Notes
 Generated the express app using the following command line:
 
     express --sessions --css less my-morning-coffee
+
+Release Notes
+-------------
+
+# 0.2.0
+
+Switched from express to a branched version of Locomotive.js (includes CoffeeScript support)
+
