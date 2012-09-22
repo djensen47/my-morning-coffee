@@ -5,12 +5,14 @@ Scaffolding for basic node.js app that is ready to deploy on a CloudFoundry serv
 
 This project consists of the following components.
 
-- CoffeeScript as the programming language.
-- Express.js
-  - Less for CSS
-  - Jade for templates
-- Bootstrap for look and feel (works well with Less)
-- Bootswatch for Boostrap themes
+- [CoffeeScript](http://coffeescript.org/) as the programming language.
+- [Locomotive.js](https://github.com/jaredhanson/locomotive) (based on [Express.js](https://github.com/visionmedia/express))
+  - The version of Locomotive is a [forked version](https://github.com/djensen47/locomotive), whcih supports CoffeeScript
+  - [Less](https://github.com/cloudhead/less.js) for CSS
+  - [Jade](https://github.com/visionmedia/jade) for templates
+- [Bootstrap](http://twitter.github.com/bootstrap/) for look and feel (works well with Less)
+- [Bootswatch](http://bootswatch.com/) for Boostrap themes
+- [Mongoose]() for MongoDB ORM
 
 Uses
 ----
@@ -50,7 +52,6 @@ Roadmap
 
 - Twitter authentication
 - Facebook authentication
-- MongoDB support
 
 Notes
 -----
@@ -64,5 +65,6 @@ Release Notes
 
 # 0.2.0
 
-Switched from express to a branched version of Locomotive.js (includes CoffeeScript support)
+- Switched from express to a branched version of Locomotive.js (includes CoffeeScript support)
+- Added mongoose and an example of using the models directory
 
