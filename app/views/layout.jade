@@ -1,9 +1,12 @@
 doctype 5
 html
   head
-    title= title
+    if locals.title
+      title = title
+    else
+      title My Morning Coffee
     //- link(rel='stylesheet', href='/stylesheets/bootstrap/bootstrap.css')
-    link(rel='stylesheet', href='/stylesheets/bootswatch/slate.css')
+    link(rel='stylesheet', href='/stylesheets/bootswatch/united.css')
     link(rel='stylesheet', href='/stylesheets/bootstrap/responsive.css')
     script(src="http://code.jquery.com/jquery-latest.js")
     script(src='/javascripts/bootstrap/bootstrap.min.js')  
@@ -16,8 +19,15 @@ html
             | My Morning Coffee
         
           .pull-right
-            a.btn.btn-success Sign Up
-            a.btn.btn-primary Login
+            .nav
+              li 
+                a(href=urlFor({ controller: 'user', action: 'new' })) Sign Up
+              li 
+                a(href=urlFor({ controller: 'user', action: 'login' })) Login
+              li
+                a(href=urlFor({ controller: 'user', action: 'logout' })) Logout
+            //- a.btn.btn-success Sign Up
+            //- a.btn.btn-primary Login
 
     .container
       .hero-unit
@@ -30,4 +40,7 @@ html
         .span8
           block content
         .span4
-          .well This is the side bar.    
+          .well
+            //- ul
+              //- each key, val in locals
+                //- li #{val}: #{key}      

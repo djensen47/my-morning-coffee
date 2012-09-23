@@ -1,0 +1,6 @@
+extends ../layout
+
+block content
+  div User: #{user.email}
+
+  a(href = urlFor({ controller: 'user', action: 'logout' })) Logout

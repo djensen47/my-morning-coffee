@@ -8,3 +8,8 @@
 module.exports = () ->
   this.root('pages#main')
   this.match('logs', 'pages#logs')
+
+  this.resource('user')
+  this.match('login', 'user#loginForm', { via: 'get' })
+  this.match('login', 'user#login', { via: 'post' })
+  this.match('logout', 'user#logout')
