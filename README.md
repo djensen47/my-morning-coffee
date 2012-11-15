@@ -12,7 +12,7 @@ This project consists of the following components.
   - [Jade](https://github.com/visionmedia/jade) for templates
 - [Bootstrap](http://twitter.github.com/bootstrap/) for look and feel (works well with Less)
 - [Bootswatch](http://bootswatch.com/) for Boostrap themes
-- [Mongoose]() for MongoDB ORM
+- [Mongoose](http://mongoosejs.com/) for MongoDB ORM
 
 Uses
 ----
